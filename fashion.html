@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Fashion</title>
+    <link rel="stylesheet" href="fashion.css">
+    <script src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!--navbar-->
+    <section id="nav-bar">
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" style="width:80px; height:20px; margin-left:250px;margin-bottom:-35px;">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products,brands and more">
+                <button type="submit" id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+
+
+            <!--login-->
+            <div class="login">
+                <a href="login.html">
+                    <button type="submit" id="login-button">Login</button>
+                </a>
+            </div>
+            
+
+            <!--wording in navbar-->
+            <div class="wordings">
+                <a href="#">Become a seller</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-toogle">More</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" style="text-decoration:none;color:black;"><i class="far fa-bell" style="color: #216ed4;"></i> Notificatin Preferance</a></li>
+                    <li><a href="#"style="text-decoration:none;color:black;"><i class="fas fa-business-time" style="color: #216ed4;"></i> 24X7 Customer Care</a></li>
+                    <li><a href="#"style="text-decoration:none;color:black;"><i class="fas fa-chart-line" style="color: #216ed4;"></i> Advertise</a></li>
+                    <li><a href="#"style="text-decoration:none;color:black;"><i class="fas fa-arrow-down-long" style="color: #216ed4;"></i> Download App</a></li>
+                </ul>
+            </div>
+            <!---cart-->
+            <div class="cart">
+                <a><i class="fa-solid fa-cart-arrow-down" style="color: #ffff;"></i> Cart</a>
+            </div>
+        </div>
+    </section> 
+    
+    <section class="filters">
+        <div class="filter-tab">
+            <h1 style="font-size:14px;font-weight:500;padding:8px 10px;">Filters</h1>
+
+            <hr>
+
+            <p style="color:grey;font-size:12px;padding:0px 5px">CATEGORIES</p>
+            <p style="font-weight:500;font-size:14px;padding:0px 8px">Clothing & Accessories</p>
+
+            <hr>
+
+            <h1 style="font-size:13px;font-weight:500;padding:5px 8px;">PRICE</h1>
+            <button onclick="sortLowToHigh()" style="border:none;background-color:white;font-size:13px;display:flex;padding:5px 8px;">Low To High</button>
+            <button onclick="sortHighToLow()" style="border:none;background-color:white;font-size:13px;display:flex;padding-top:20px;padding:5px 8px">High to low </button>
+
+            <hr>
+            <div class="brand" style="padding: 8px 8px;">
+                <h1 style="font-size:14px">Brand</h1>
+                <a style="font-size: 13px;">
+                   <input type="checkbox" id="mob1">
+                   <label for="mob1">ADIDAS</label><br>
+                   <input type="checkbox" id="mob2">
+                   <label type="mob1">Allen Solly</label><br>
+                   <input type="checkbox" id="mob2">
+                   <label type="mob1">Amante</label><br>
+                   <input type="checkbox" id="mob2">
+                   <label type="mob1">AND</label><br>
+                   <input type="checkbox" id="mob2">
+                   <label type="mob1">ARROW</label><br>
+                   <input type="checkbox" id="mob2">
+                   <label type="mob1">Arrow Newyork</label>  
+                </a> <br>
+                <a style="font-size:11px;color:blue;">11051 MORE</a>
+                <hr>
+                <h1 style="font-size:13px;">CUSTOMER RATINGS</h1>
+                <a style="font-size: 13px;">
+                   <input type="checkbox" id="mob2">
+                   <label type="mob1">4&starf; & above</label><br>
+                   <input type="checkbox" id="mob2">
+                   <label type="mob1">3&starf; & above</label><br>
+                   <input type="checkbox" id="mob2">
+                   <label type="mob1">2&starf; & above</label><br>
+                   <input type="checkbox" id="mob2">
+                   <label type="mob1">1&starf; & above</label><br>
+                </a>
+            </div>
+                
+
+            <hr>
+            <div class="assured">
+                <input type="checkbox" id="logo" style="margin-left: 10px;">
+                <img src="mobile-images/ass.png" style="width:100px;" style="padding:8px 8px;">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="topmain">
+        <div class="top-main">
+            <p style="font-size:12px;color:grey;padding:10px 10px">Given how powerful social media has become these days, everyone around the world wants to look their best at all times. 
+                Thus, the right clothing and accessories are almost always in demand.<span style="color:blue;"> Good-quality shirts, T-shirts, trousers, jeans, shorts, tops, sarees, kurtis, lehenga, dresses, skirts, bra, innerwear, 
+                and more </span> are some of the examples that people love and need to wear. 
+                Watches, earrings, rings, bracelets, chains, etc can accentuate the look of every outfit. 
+                Thus, it’s important to wear complementing accessories when you dress up in your finest.</p>
+            <h1 style="font-size:16px;padding:10px 14px;">Clothing & Accessories</h1>
+            <div class="sort-by" style="display:flex;align-items:center;padding:10px 14px;">
+                <a style="font-weight:500;font-size:15px;padding:10px;">Sort By</a>
+                <a style="font-size:15px;padding:10px;">Popularity</a>
+                <a style="font-size:15px;padding:10px;">Price--Low to High</a>
+                <a style="font-size:15px;padding:10px;">Price--High to Low</a>
+                <a style="font-size:15px;padding:10px;">Newset First</a>
+            </div>
+            <hr>
+
+            <div class="fash-images-1" style="display:flex;">
+                <a>
+                    <img src="fash-img/img1.webp" alt="mob1" style="width:210px;padding-left:10px;">
+                    <p style="font-size:12px;color:grey;margin-top:0px;padding-left:10px;">Jump Cuts</p>
+                    <p style="font-size:14px;padding-left:10px;">Men Printed Hooded Neck</p>
+                    <button type="button" style="background-color:rgb(36, 161, 36);border:none;border-radius:5px;color:white;margin-left:10px;font-size:14px">4.4 &starf;</button>
+                    <p style="font-weight:500;font-size:16px;margin-left:10px;">&#8377;399 <span style="color:green;font-size:small;font-weight:550;">17%</span></p>
+                    <p style="font-size:14px;padding-left:10px;"><span style="color:grey;">Size:</span> S,L</p>
+
+                </a>
+
+                <a>
+                    <img src="fash-img/img2.webp" alt="mob1" style="width:230px;padding-left:10px;">
+                    <p style="font-size:12px;color:grey;margin-top:3px;padding-left:10px;">Smartees</p>
+                    <p style="font-size:14px;padding-left:10px;">Men Typography Round Neck</p>
+                    <button type="button" style="background-color:rgb(36, 161, 36);border:none;border-radius:5px;color:white;margin-left:10px;font-size:14px">4.4 &starf;</button>
+                    <p style="font-weight:500;font-size:16px;margin-left:10px;">&#8377;239 <span style="color:green;font-size:small;font-weight:550;">80%</span></p>
+                    <p style="font-size:14px;padding-left:10px;"><span style="color:grey;">Size:</span> S,M,L,XL</p>
+                </a>
+
+                <a>
+                    <img src="fash-img/img3.jpg" alt="mob1" style="width:240px;padding-left:10px;">
+                    <p style="font-size:12px;color:grey;margin-top:3px;padding-left:10px;">Solbiza</p>
+                    <p style="font-size:14px;padding-left:10px;">Men Regular Fit </p>
+                    <button type="button" style="background-color:rgb(36, 161, 36);border:none;border-radius:5px;color:white;margin-left:10px;font-size:14px">4.4 &starf;</button>
+                    <p style="font-weight:500;font-size:16px;margin-left:10px;">&#8377;288 <span style="color:green;font-size:small;font-weight:550;">81%</span></p>
+                    <p style="font-size:14px;padding-left:10px;"><span style="color:grey;">Size:</span> S,M,L,XL</p>
+                </a>
+
+                <a>
+                    <img src="fash-img/img4.webp" alt="mob1" style="width:240px;padding-left:10px;">
+                    <p style="font-size:12px;color:grey;margin-top:3px;padding-left:10px;">VeBNoR</p>
+                    <p style="font-size:14px;padding-left:10px;">Men Regular Fit</p>
+                    <button type="button" style="background-color:rgb(36, 161, 36);border:none;border-radius:5px;color:white;margin-left:10px;font-size:14px">4.3 &starf;</button>
+                    <p style="font-weight:500;font-size:16px;margin-left:10px;">&#8377;399 <span style="color:green;font-size:small;font-weight:550;">78%</span></p>
+                    <p style="font-size:14px;padding-left:10px;"><span style="color:grey;">Size:</span> S,M,L,XL</p>
+                </a>
+                
+            </div>
+
+            <div class="fash-images-2" style="display:flex">
+                <a>
+                    <img src="fash-img/img5.webp" alt="mob1" style="width:240px;padding-left:10px;">
+                    <p style="font-size:12px;color:grey;margin-top:2px;padding-left:10px;">COMBRAIDED</p>
+                    <p style="font-size:14px;padding-left:10px;">Men Regular Fit</p>
+                    <button type="button" style="background-color:rgb(36, 161, 36);border:none;border-radius:5px;color:white;margin-left:10px;font-size:14px">4.3 &starf;</button>
+                    <p style="font-weight:500;font-size:16px;margin-left:10px;">&#8377;399 <span style="color:green;font-size:small;font-weight:550;">73%</span></p>
+                    <p style="font-size:14px;padding-left:10px;"><span style="color:grey;">Size:</span> S,M,L,XL</p>
+                </a>
+
+                <a>
+                    <img src="fash-img/img6.webp" alt="mob1" style="width:270px;height:300px;padding-left:10px;">
+                    <p style="font-size:12px;color:grey;margin-top:3px;padding-left:10px;">SH FSN</p>
+                    <p style="font-size:14px;padding-left:10px;">Men Regular Fit</p>
+                    <button type="button" style="background-color:rgb(36, 161, 36);border:none;border-radius:5px;color:white;margin-left:10px;font-size:14px">4.3 &starf;</button>
+                    <p style="font-weight:500;font-size:16px;margin-left:10px;">&#8377;399 <span style="color:green;font-size:small;font-weight:550;">69%</span></p>
+                    <p style="font-size:14px;padding-left:10px;"><span style="color:grey;">Size:</span> S,M,L,XL,XXL</p>
+                </a>
+
+                <a>
+                    <img src="fash-img/img7.webp" alt="mob1" style="width:270px;padding-left:10px;">
+                    <p style="font-size:12px;color:grey;margin-top:3px;padding-left:10px;">VeBNoR</p>
+                    <p style="font-size:14px;padding-left:10px;">Men Regular Fit</p>
+                    <button type="button" style="background-color:rgb(36, 161, 36);border:none;border-radius:5px;color:white;margin-left:10px;font-size:14px">4.3 &starf;</button>
+                    <p style="font-weight:500;font-size:16px;margin-left:10px;">&#8377;399 <span style="color:green;font-size:small;font-weight:550;">78%</span></p>
+                    <p style="font-size:14px;padding-left:10px;"><span style="color:grey;">Size:</span> S,M,L,XL,XXL</p>
+                </a>
+
+                <a>
+                    <img src="fash-img/img8.webp" alt="mob1" style="width:200px;padding-left:10px;">
+                    <p style="font-size:12px;color:grey;margin-top:3px;padding-left:10px;">COMBRAIDED</p>
+                    <p style="font-size:14px;padding-left:10px;">Men Regular Fit Solid</p>
+                    <button type="button" style="background-color:rgb(36, 161, 36);border:none;border-radius:5px;color:white;margin-left:10px;font-size:14px">4.3 &starf;</button>
+                    <p style="font-weight:500;font-size:16px;margin-left:10px;">&#8377;399 <span style="color:green;font-size:small;font-weight:550;">80%</span></p>
+                    <p style="font-size:14px;padding-left:10px;"><span style="color:grey;">Size:</span> S,M,L,XL</p>
+                </a>
+                
+
+                
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+</html>
+
+   
+    
