@@ -1,0 +1,168 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    position:fixed;
+    background-color: rgb(12, 194, 12);
+    width:100%;
+    height:60px;
+    z-index:999;
+}
+
+/*search bar*/
+.search-bar{
+    position:fixed;
+    margin-left: 350px;
+    margin-top: -10px;
+    height:30px;
+}
+.search-bar input[type="text"]{
+    width:400px;
+    height: 35px;
+    border-radius: 1px;
+    border:none;
+}
+.search-results{
+    margin:20px;
+}
+.search-bar button{
+    position: fixed;
+    width:35px;
+    height: 35px;
+    border:none;
+    background-color:white;
+    border-radius: 1px;
+}
+/*end of search bar*/
+
+/*login*/
+.login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    padding-right: 600px;
+    text-align: right;
+  }
+  
+  .login button {
+    border: none;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+/*end of login*/
+
+/*Become a seller*/
+.wordings{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    margin-left: 970px;
+    margin-top: 0px;
+}
+.wordings a{
+    color:white;
+    font-weight: medium;
+    text-decoration: none;
+}
+/*end of Become a seller*/
+
+/*More dropdown*/
+.dropdown{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 1115px;
+    
+}
+
+.dropdown-toogle{
+    background-color: transparent;
+    color:white;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+.dropdown-menu{
+    display: flex;
+    align-items: center;
+    top:100%;
+}
+.dropdown-menu li{
+    padding: 10px;
+    
+   
+}
+.dropdown-menu ul{
+    margin-left: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+
+  }
+/*end of More dropdown*/
+.cart{
+    display: flex;
+    align-items: center;
+    margin-left: 1200px;
+    margin-top: -20px;
+    color: white;
+}
+
+/*end of Nav bar*/
+
+/*second nav bar*/
+.second-navbar{
+    display: flex;
+    align-items: center;
+    background-color:white;
+}
+
+
+/* footer*/
+
+.footer-sec{
+    display: flex;
+    align-items: center;
+    background-color: rgb(1, 1, 46);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-sec li{
+    margin-bottom: 10px;
+}
+.vertical-line{
+    border: 1px solid grey;
+    height: 180px;
+    margin-left:200px;
+}
+
+.horizantal-line{
+    border: 1px solid grey;
+}
+
+.last-footer{
+    display: flex;
+    align-items: center;
+    background-color: rgb(1, 1, 46);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.last-footer a{
+    padding-left: 120px;
+}
+
