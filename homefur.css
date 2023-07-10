@@ -1,0 +1,215 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    position:fixed;
+    background-color: rgba(30, 104, 215, 0.822);
+    width:100%;
+    height:60px;
+    z-index:999;
+}
+/*search bar*/
+.search-bar{
+    position:fixed;
+    margin-left: 350px;
+    margin-top: -10px;
+    height:30px;
+}
+.search-bar input{
+    width:400px;
+    height: 35px;
+    border-radius: 1px;
+    border:none;
+}
+.search-bar button{
+    position: fixed;
+    width:35px;
+    height: 35px;
+    border:none;
+    background-color:white;
+    border-radius: 1px;
+}
+/*end of search bar*/
+/*login*/
+.login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    padding-right: 600px;
+    text-align: right;
+  }
+  
+  .login button {
+    border: none;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+/*end of login*/
+/*login*/
+.login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    padding-right: 600px;
+    text-align: right;
+  }
+  
+  .login button {
+    border: none;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+/*end of login*/
+
+/*Become a seller*/
+.wordings{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    margin-left: 970px;
+    margin-top: 0px;
+}
+.wordings a{
+    color:white;
+    font-weight: medium;
+    text-decoration: none;
+}
+/*end of Become a seller*/
+
+/*More dropdown*/
+.dropdown{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 1115px;
+    
+}
+
+.dropdown-toogle{
+    background-color: transparent;
+    color:white;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+.dropdown-menu{
+    display: flex;
+    align-items: center;
+    top:100%;
+}
+.dropdown-menu li{
+    padding: 10px;
+    
+   
+}
+.dropdown-menu ul{
+    margin-left: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+
+  }
+/*end of More dropdown*/
+.cart{
+    display: flex;
+    align-items: center;
+    margin-left: 1200px;
+    margin-top: -20px;
+    color: white;
+}
+
+/*end of Nav bar*/
+
+/*new nav bar*/
+.new-navbar{
+    position:relative;
+    display: flex;
+    align-items: center;   
+    background-color:whitesmoke;
+}
+.nav-dropdown{
+    position: relative;
+    align-items: center;
+    background-color:transparent;
+    margin-top: 60px;
+
+}
+.dropdown-toggle-two{
+    border: none;
+    background-color: transparent;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+}
+.ele{
+    display: none;
+    background-color: transparent;
+    list-style-type: none;
+    cursor: pointer;
+}
+.ele li:hover{
+    color:rgba(30, 104, 215, 0.822);
+}
+.nav-dropdown:hover .ele{
+    display: block;
+}
+
+
+.filter-tab{
+    background-color:rgb(249, 249, 249);
+    width:350px;
+    height:auto;
+    margin:8px;
+    padding: 0px;
+}
+
+.top-main{
+    background-color:white;
+    width: 1150px;
+    margin-left: 365px;
+    margin-top: -188px;
+}
+
+.mob-images-1 a{
+    padding-left: 20px;
+}
+.mob-images-2 a{
+    padding: 20px;
+    padding-left: 20px;
+}
+
+
+/*Bar home furniture*/
+.bar-one{
+    margin:8px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.img-bar {
+    display: flex;
+    align-items: center;
+}
+
+.img-bar a{
+    transform:tanstion 0.3 ease;
+}
+
+.img-bar a:hover img{
+    transform: scale(0.8);
+}
